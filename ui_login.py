@@ -28,9 +28,9 @@ class Ui_Login(object):
         self.img.setStyleSheet(u"background-color: rgba(0.255,0.255,0.255,0.255);")
         self.img.setPixmap(QPixmap(u"IMG/47772-removebg.png"))
         self.img.setScaledContents(True)
-        self.txt_senha = QLineEdit(Login)
-        self.txt_senha.setObjectName(u"txt_senha")
-        self.txt_senha.setGeometry(QRect(140, 320, 191, 20))
+        self.txt_password = QLineEdit(Login)
+        self.txt_password.setObjectName(u"txt_password")
+        self.txt_password.setGeometry(QRect(140, 320, 191, 20))
         palette = QPalette()
         brush = QBrush(QColor(0, 0, 0, 255))
         brush.setStyle(Qt.SolidPattern)
@@ -54,27 +54,27 @@ class Ui_Login(object):
         palette.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
         palette.setBrush(QPalette.Disabled, QPalette.Base, brush1)
         palette.setBrush(QPalette.Disabled, QPalette.Window, brush1)
-        self.txt_senha.setPalette(palette)
+        self.txt_password.setPalette(palette)
         font = QFont()
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
-        self.txt_senha.setFont(font)
-        self.txt_senha.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+        self.txt_password.setFont(font)
+        self.txt_password.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);")
-        self.txt_senha.setEchoMode(QLineEdit.Password)
-        self.txt_senha.setAlignment(Qt.AlignCenter)
-        self.txt_usuario = QLineEdit(Login)
-        self.txt_usuario.setObjectName(u"txt_usuario")
-        self.txt_usuario.setGeometry(QRect(140, 250, 191, 20))
-        self.txt_usuario.setFont(font)
-        self.txt_usuario.setStyleSheet(u"color: rgb(0, 0, 0);\n"
+        self.txt_password.setEchoMode(QLineEdit.Password)
+        self.txt_password.setAlignment(Qt.AlignCenter)
+        self.txt_login = QLineEdit(Login)
+        self.txt_login.setObjectName(u"txt_login")
+        self.txt_login.setGeometry(QRect(140, 250, 191, 20))
+        self.txt_login.setFont(font)
+        self.txt_login.setStyleSheet(u"color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 255, 255);")
-        self.txt_usuario.setAlignment(Qt.AlignCenter)
-        self.txt_usuario.setReadOnly(False)
-        self.btn_entrar = QPushButton(Login)
-        self.btn_entrar.setObjectName(u"btn_entrar")
-        self.btn_entrar.setGeometry(QRect(190, 380, 91, 31))
+        self.txt_login.setAlignment(Qt.AlignCenter)
+        self.txt_login.setReadOnly(False)
+        self.btn_login = QPushButton(Login)
+        self.btn_login.setObjectName(u"btn_login")
+        self.btn_login.setGeometry(QRect(190, 380, 91, 31))
         palette1 = QPalette()
         palette1.setBrush(QPalette.Active, QPalette.WindowText, brush1)
         gradient = QLinearGradient(0, 0, 1, 0)
@@ -148,10 +148,10 @@ class Ui_Login(object):
         gradient8.setColorAt(1, QColor(255, 255, 255, 255))
         brush10 = QBrush(gradient8)
         palette1.setBrush(QPalette.Disabled, QPalette.Window, brush10)
-        self.btn_entrar.setPalette(palette1)
-        self.btn_entrar.setFont(font)
-        self.btn_entrar.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_entrar.setStyleSheet(u"QPushButton{\n"
+        self.btn_login.setPalette(palette1)
+        self.btn_login.setFont(font)
+        self.btn_login.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_login.setStyleSheet(u"QPushButton{\n"
 "\n"
 "	\n"
 "	color: rgb(255, 255, 255);\n"
@@ -167,7 +167,7 @@ class Ui_Login(object):
 "	color: rgb(0, 0, 0);\n"
 "\n"
 "}")
-        QWidget.setTabOrder(self.txt_usuario, self.txt_senha)
+        QWidget.setTabOrder(self.txt_login, self.txt_password)
 
         self.retranslateUi(Login)
 
@@ -183,11 +183,11 @@ class Ui_Login(object):
         Login.setWhatsThis(QCoreApplication.translate("Login", u"<html><head/><body><p><br/></p></body></html>", None))
 #endif // QT_CONFIG(whatsthis)
         self.img.setText("")
-        self.txt_senha.setPlaceholderText(QCoreApplication.translate("Login", u"SENHA", None))
+        self.txt_password.setPlaceholderText(QCoreApplication.translate("Login", u"SENHA", None))
 #if QT_CONFIG(tooltip)
-        self.txt_usuario.setToolTip(QCoreApplication.translate("Login", u"<html><head/><body><p align=\"center\"><br/></p></body></html>", None))
+        self.txt_login.setToolTip(QCoreApplication.translate("Login", u"<html><head/><body><p align=\"center\"><br/></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
-        self.txt_usuario.setPlaceholderText(QCoreApplication.translate("Login", u"USU\u00c1RIO", None))
-        self.btn_entrar.setText(QCoreApplication.translate("Login", u"ENTRAR", None))
+        self.txt_login.setPlaceholderText(QCoreApplication.translate("Login", u"USU\u00c1RIO", None))
+        self.btn_login.setText(QCoreApplication.translate("Login", u"ENTRAR", None))
     # retranslateUi
 

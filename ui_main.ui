@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>795</width>
+    <width>955</width>
     <height>995</height>
    </rect>
   </property>
@@ -81,7 +81,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_table">
+        <widget class="QPushButton" name="btn_tables">
          <property name="styleSheet">
           <string notr="true">QPushButton{
 	
@@ -111,7 +111,7 @@ QPushButton:hover{
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="btn_p_importar">
+        <widget class="QPushButton" name="btn_pg_import">
          <property name="styleSheet">
           <string notr="true">QPushButton{
 	
@@ -189,7 +189,7 @@ QPushButton:hover{
      </widget>
     </item>
     <item>
-     <widget class="QStackedWidget" name="page">
+     <widget class="QStackedWidget" name="Pages">
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 255, 255);
 background-color: rgb(0, 0, 0);</string>
@@ -222,7 +222,7 @@ background-color: rgb(0, 0, 0);</string>
                 <item>
                  <layout class="QVBoxLayout" name="verticalLayout_4">
                   <item>
-                   <widget class="QLabel" name="txt_estoque">
+                   <widget class="QLabel" name="label_34">
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(0, 0, 0);</string>
                     </property>
@@ -238,120 +238,114 @@ background-color: rgb(0, 0, 0);</string>
                     </property>
                     <column>
                      <property name="text">
-                      <string>ITEM</string>
+                      <string>Nfe</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>CÓDIGO</string>
+                      <string>data_emissão</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>QUANTIDADE</string>
+                      <string>chave</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>DESCRIÇÃO </string>
+                      <string>nome_emitente</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
-                       <strikeout>false</strikeout>
                       </font>
                      </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>cod</string>
                      </property>
-                     <property name="foreground">
-                      <brush brushstyle="SolidPattern">
-                       <color alpha="255">
-                        <red>0</red>
-                        <green>0</green>
-                        <blue>0</blue>
-                       </color>
-                      </brush>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
                      </property>
                     </column>
-                    <item>
+                    <column>
                      <property name="text">
-                      <string>Pneu </string>
+                      <string>qntd</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>01</string>
+                      <string>descrição</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>10</string>
+                      <string>data_importação</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>PNEU PARA CAMINHOES </string>
+                      <string>usuario</string>
                      </property>
-                    </item>
-                    <item>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>Fusivel </string>
+                      <string>data_saida</string>
                      </property>
-                     <property name="text">
-                      <string>02</string>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
                      </property>
-                     <property name="text">
-                      <string>30</string>
-                     </property>
-                     <property name="text">
-                      <string>fusivel para funcionamento do sistema eletrico</string>
-                     </property>
-                    </item>
-                    <item>
-                     <property name="text">
-                      <string>Lampadas </string>
-                     </property>
-                     <property name="text">
-                      <string>03</string>
-                     </property>
-                     <property name="text">
-                      <string>15</string>
-                     </property>
-                     <property name="text">
-                      <string>Lampadas para farois dos tratores</string>
-                     </property>
-                    </item>
+                    </column>
                    </widget>
                   </item>
                  </layout>
@@ -359,7 +353,7 @@ background-color: rgb(0, 0, 0);</string>
                 <item>
                  <layout class="QVBoxLayout" name="verticalLayout_5">
                   <item>
-                   <widget class="QLabel" name="txt_saida">
+                   <widget class="QLabel" name="label_35">
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(0, 0, 0);</string>
                     </property>
@@ -369,107 +363,120 @@ background-color: rgb(0, 0, 0);</string>
                    </widget>
                   </item>
                   <item>
-                   <widget class="QTreeWidget" name="tw_sada">
+                   <widget class="QTreeWidget" name="tw_saida">
                     <property name="styleSheet">
                      <string notr="true">background-color: rgb(255, 255, 255);</string>
                     </property>
                     <column>
                      <property name="text">
-                      <string>ITEM</string>
+                      <string>Nfe</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>CÓDIGO</string>
+                      <string>data_emissao</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>QUANTIDADE</string>
+                      <string>chave</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
                       </font>
-                     </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
-                     </property>
-                     <property name="foreground">
-                      <brush brushstyle="SolidPattern">
-                       <color alpha="255">
-                        <red>0</red>
-                        <green>0</green>
-                        <blue>0</blue>
-                       </color>
-                      </brush>
                      </property>
                     </column>
                     <column>
                      <property name="text">
-                      <string>DATA SAÍDA</string>
+                      <string>nome_emitente</string>
                      </property>
                      <property name="font">
                       <font>
-                       <pointsize>10</pointsize>
                        <weight>75</weight>
                        <bold>true</bold>
-                       <underline>true</underline>
-                       <strikeout>false</strikeout>
                       </font>
                      </property>
-                     <property name="textAlignment">
-                      <set>AlignCenter</set>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>cod</string>
                      </property>
-                     <property name="foreground">
-                      <brush brushstyle="SolidPattern">
-                       <color alpha="255">
-                        <red>0</red>
-                        <green>0</green>
-                        <blue>0</blue>
-                       </color>
-                      </brush>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
                      </property>
                     </column>
-                    <item>
+                    <column>
                      <property name="text">
-                      <string>Pneu</string>
+                      <string>qntd</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>01</string>
+                      <string>descrição</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>10</string>
+                      <string>data_importação</string>
                      </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
                      <property name="text">
-                      <string>09/11/2023</string>
+                      <string>usuario</string>
                      </property>
-                    </item>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>data_saida</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
                    </widget>
                   </item>
                  </layout>
@@ -497,7 +504,7 @@ background-color: rgb(255, 255, 255);</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="btn_import">
+                  <widget class="QPushButton" name="btn_">
                    <property name="styleSheet">
                     <string notr="true">
 
@@ -520,7 +527,7 @@ QPushButton:hover{
 }</string>
                    </property>
                    <property name="text">
-                    <string/>
+                    <string>GERAR ENTRADA</string>
                    </property>
                   </widget>
                  </item>
@@ -532,7 +539,7 @@ QPushButton:hover{
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="btn_exit">
+                  <widget class="QPushButton" name="btn_gerar">
                    <property name="styleSheet">
                     <string notr="true">QPushButton{
 
@@ -623,7 +630,7 @@ QPushButton:hover{
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="txt_filtro">
+             <widget class="QLineEdit" name="txt_search">
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -651,7 +658,7 @@ background-color: rgb(255, 255, 255);</string>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QPushButton" name="btn_gerar_grafico">
+               <widget class="QPushButton" name="btn_chart">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -686,7 +693,7 @@ QPushButton:hover{
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="btn_gerar_excel">
+               <widget class="QPushButton" name="btn_excel">
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
@@ -721,7 +728,7 @@ QPushButton:hover{
              </layout>
             </item>
             <item>
-             <widget class="QTableView" name="tb_estoque"/>
+             <widget class="QTableView" name="tb_geral"/>
             </item>
            </layout>
           </widget>
@@ -733,18 +740,59 @@ QPushButton:hover{
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QLabel" name="label_2">
-          <property name="maximumSize">
-           <size>
-            <width>1060</width>
-            <height>16777215</height>
-           </size>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;PROJETO INTEGRADOR II:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;Sistema de Gerenciamento de Estoque&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;( LEANDRO E JOÃO )&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="IMG/imagens.qrc">:/Imagens/19632223305.jpg</pixmap>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_pg_cadastro">
+          <property name="font">
+           <font>
+            <family>MS Shell Dlg 2</family>
+            <pointsize>9</pointsize>
+            <weight>9</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+           <string notr="true">QPushButton{
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.494, radius:0.5, fx:0.5, fy:0.5, stop:0.40796 rgba(134, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+	color: rgb(255, 255, 255);
+	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+	
+
+}
+
+QPushButton:hover{
+
+	
+	background-color: rgb(255, 255, 255);
+	
+	color: rgb(0, 0, 0);
+
+}</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600; color:#000000;&quot;&gt;PROJETO INTEGRADOR II:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#000000;&quot;&gt;Sistema de Gerenciamento de Estoque&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:7pt; color:#000000;&quot;&gt;( LEANDRO E JOÃO )&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>Cadastrar Usuário</string>
           </property>
          </widget>
         </item>
@@ -830,7 +878,7 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="TXT_NOME">
+           <widget class="QLineEdit" name="txt_nome">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -868,7 +916,7 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="TXT_USUARIO">
+           <widget class="QLineEdit" name="txt_usuario">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -903,7 +951,7 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="TXT_SENHA">
+           <widget class="QLineEdit" name="txt_senha">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -941,7 +989,7 @@ color: rgb(255, 255, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="TXT_C_SENHA">
+           <widget class="QLineEdit" name="txt_senha_2">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -988,7 +1036,7 @@ color: rgb(255, 255, 255);
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="COMBOBOX_ADM_USUARIO">
+           <widget class="QComboBox" name="cb_perfil">
             <property name="styleSheet">
              <string notr="true">background-color: rgb(255, 255, 255);</string>
             </property>
@@ -1030,7 +1078,7 @@ color: rgb(255, 255, 255);
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="BTN_CADASTRAR">
+           <widget class="QPushButton" name="btn_cadastrar">
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
@@ -1100,7 +1148,7 @@ QPushButton:hover{
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="pg_import">
        <layout class="QVBoxLayout" name="verticalLayout_10">
         <item>
          <widget class="QLabel" name="label">
@@ -1115,7 +1163,7 @@ QPushButton:hover{
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="txt_file">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1139,7 +1187,7 @@ QPushButton:hover{
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="btn_open_2">
+           <widget class="QPushButton" name="btn_open">
             <property name="minimumSize">
              <size>
               <width>120</width>
@@ -1185,7 +1233,7 @@ QPushButton:hover{
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="btn_importar">
+           <widget class="QPushButton" name="btn_import">
             <property name="layoutDirection">
              <enum>Qt::LeftToRight</enum>
             </property>
@@ -1229,93 +1277,46 @@ QPushButton:hover{
           </item>
          </layout>
         </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="styleSheet">
+           <string notr="true">QProgressBar{	background-color: rgba(0, 0, 0,0.1);
+                    	color: rgb(255, 255, 255);
+                		border-style: none;
+                		text-align: center;
+                		border-radius:10px;
+                
+                }
+ 
+               
+QProgressBar::chunk{ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(6, 75, 149, 255), stop:1 rgba(72, 130, 157, 255));
+                				border-radius:10px;
+                                }</string>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
      </widget>
     </item>
-    <item>
-     <widget class="QFrame" name="frame_5">
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_7">
-       <item>
-        <widget class="QLabel" name="label_24">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="BTN_PG_CADASTRO">
-         <property name="font">
-          <font>
-           <family>MS Shell Dlg 2</family>
-           <pointsize>9</pointsize>
-           <weight>9</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
-	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.494, radius:0.5, fx:0.5, fy:0.5, stop:0.40796 rgba(134, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
-	color: rgb(255, 255, 255);
-	font: 75 9pt &quot;MS Shell Dlg 2&quot;;
-	
-
-}
-
-QPushButton:hover{
-
-	
-	background-color: rgb(255, 255, 255);
-	
-	color: rgb(0, 0, 0);
-
-}</string>
-         </property>
-         <property name="text">
-          <string>Cadastrar Usuário</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_27">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
    </layout>
-   <zorder>frame</zorder>
-   <zorder>frame_5</zorder>
-   <zorder>page</zorder>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>BTN_PG_CADASTRO</tabstop>
   <tabstop>tw_estoque</tabstop>
-  <tabstop>tw_sada</tabstop>
-  <tabstop>btn_import</tabstop>
-  <tabstop>btn_exit</tabstop>
+  <tabstop>tw_saida</tabstop>
+  <tabstop>btn_</tabstop>
+  <tabstop>btn_gerar</tabstop>
   <tabstop>btn_estorno</tabstop>
-  <tabstop>TXT_NOME</tabstop>
-  <tabstop>COMBOBOX_ADM_USUARIO</tabstop>
-  <tabstop>TXT_USUARIO</tabstop>
-  <tabstop>TXT_SENHA</tabstop>
-  <tabstop>BTN_CADASTRAR</tabstop>
-  <tabstop>TXT_C_SENHA</tabstop>
+  <tabstop>txt_nome</tabstop>
+  <tabstop>cb_perfil</tabstop>
+  <tabstop>txt_usuario</tabstop>
+  <tabstop>txt_senha</tabstop>
+  <tabstop>btn_cadastrar</tabstop>
+  <tabstop>txt_senha_2</tabstop>
  </tabstops>
  <resources>
   <include location="IMG/imagens.qrc"/>

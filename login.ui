@@ -53,7 +53,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_senha">
+  <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -255,7 +255,7 @@ color: rgb(0, 0, 0);</string>
     <string>SENHA</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_usuario">
+  <widget class="QLineEdit" name="txt_login">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -288,7 +288,7 @@ background-color: rgb(255, 255, 255);</string>
     <string>USUÁRIO</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_entrar">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -602,8 +602,8 @@ QPushButton:hover{
   </widget>
  </widget>
  <tabstops>
-  <tabstop>txt_usuario</tabstop>
-  <tabstop>txt_senha</tabstop>
+  <tabstop>txt_login</tabstop>
+  <tabstop>txt_password</tabstop>
  </tabstops>
  <resources/>
  <connections/>

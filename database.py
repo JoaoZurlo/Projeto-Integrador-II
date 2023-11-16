@@ -45,32 +45,34 @@ class DataBase():
    
     def check_user(self, user, password):
 
-
         try: 
             cursor = self.connection.cursor()
-            cursor.execute("SELECT * FROM users")
-        
+            cursor.execute("""
+
+                SELECT * FROM users;
+            
+            """)
+
             for linha in cursor.fetchall():
                 if linha[2].upper() == user.upper() and linha[3] == password and linha[4] == "Administrador":
-                    print("Usuário encontrado como administrador")
                     return "Administrador"
-                elif linha[2].upper() == user.upper() and linha[3] == password and linha[4] == "Usuário":
-                    print("Usuário encontrado como usuário")
+ 
+                elif linha[2].upper() == user.upper() and linha[3] == password and linha[4] == "Usuário":        
                     return "user"
-            else:
-                print("Usuário não encontrado")
-                return "sem acesso"
+
+                else:
+                    continue
+            return "sem acesso"
         except:
             pass
-
 
     def insert_data(self, full_dataset):
 
         cursor = self.connection.cursor()
 
         campos_tabela = (
-            'NFe','serie','data_emissao','chave','cnpj_emitente','nome_emitente',
-             'valorNfe','itemNota','cod','qntd','descricao','unidade_medida','valorProd',
+            'NFe','serie','data_emissao','chave','nome_emitente',
+             'cod','qntd','descricao',
              'data_importacao','usuario','data_saida' )  
         qntd = ','.join(map(str, '?'*16))
         query = f"""INSERT INTO Notas {campos_tabela} VALUES ({qntd})"""
@@ -91,18 +93,12 @@ class DataBase():
             CREATE TABLE IF NOT EXISTS Notas(
 
             NFe TEXT,
-            serie TEXT,
             data_emissao TEXT,
             chave TEXT,
-            cnpj_emitente TEXT,
             nome_emitente TEXT,                
-            valorNfe TEXT,
-            itemNota TEXT,
             cod TEXT,
             qntd TEXT,
             descricao TEXT,
-            unidade_medida TEXT,
-            valorProd TEXT,
             data_importacao TEXT,
             usuario TEXT,
             data_saida TEXT,
